@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+</head>
+<body>
+    <span>Update</span>
+    <br /><br />
+    <form method="get">
+      <label for="ID">ID</label>
+      <input id="ID" type="text" placeholder="ID" required autofocus />
+      <br /><br />
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Name" required />
+      <br /><br />
+      <label for="date">Date of birth</label>
+      <input id="date" type="date" placeholder="Date of birth" required />
+      <br /><br />
+      <label for="gpa">GPA</label>
+      <input id="gpa" type="text" placeholder="GPA" required />
+      <br /><br />
+      <label for="level">Level</label>
+      <input
+        id="level"
+        type="number"
+        placeholder="Level"
+        required
+        min="1"
+        max="4"
+      />
+      <br /><br />
+      <label for="status">Status</label>
+      <input id="status" type="text" placeholder="Status" required />
+      <br /><br />
+      <label for="depart">Department</label>
+      <input id="depart" list="department" name="Depart" disabled>
+        <datalist id="department">
+            <option value="CS">
+            <option value="IS">
+            <option value="AI">
+            <option value="DS">
+            <option value="IT">
+            <option value="General">
+        </datalist>
+          
+      <br /><br />
+      <label for="email">Email</label>
+      <input id="email" type="text" placeholder="Email" required />
+      <br /><br />
+      <label for="number">Mobile number</label>
+      <input
+        id="number"
+        type="text"
+        placeholder="Mobile number"
+        required
+        minlength="12"
+        maxlength="12"
+      />
+      <br /><br />
+      <input type="submit" value="Save" />
+      <input type="reset" />
+    </form>
+</body>
+</html>
